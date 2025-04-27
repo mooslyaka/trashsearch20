@@ -1,0 +1,65 @@
+html, body{
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.map_css {
+    position: relative !important;
+    width: 70%;  /* Ширина контейнера */
+    height: 300px; /* Высота карты */
+    margin: auto; /* Центрируем */
+    border: 2px solid #fff; /* Граница */
+}
+.map-container {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    background-color: #e8f5e9; /* светло-зелёный */
+    color: #1b5e20;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Arial', 'Verdana', sans-serif;
+}
+
+
+.center-text {
+    background-color: #9ACD32 !important;
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    line-height: 1.7;
+    font-family: 'Arial', 'Verdana', sans-serif;
+}
+.logo {
+      background-color: #e8f5e9; /* светло-зелёный */
+      color: #525252;
+      padding: 40px 50px;
+      text-align: center;
+      font-family: 'Arial', 'Verdana', sans-serif;
+      font-size: 60px;
+    }
+
+.footer {
+      background-color: #212121; /* почти чёрный */
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      font-family: 'Arial', 'Verdana', sans-serif;
+    }
+.footer a {
+  color: white; /* или любой цвет, который тебе нужен */
+  text-decoration: none; /* убираем подчёркивание */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* можно добавить подчёркивание при наведении */
+  color: #90caf9; /* или изменить цвет при наведении */
+}

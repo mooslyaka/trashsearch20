@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Trash search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<section>
+    <header>
+        <div class="logo">Trash Search 🌍</div>
+    </header>
+    <section class="map-container">
+        <div id="map" class="map_css">
+            {{ map_html | safe }}
+        </div>
+    </section>
+    <section class="description">
+    <h2>Зачем это нужно?</h2>
+    <p>Проект Trash Search помогает отмечать на карте места, где мусорные баки не убираются вовремя.
+        Это способ привлечь внимание к проблеме и сделать город чище. Один клик — и ты уже помогаешь своему району! 💚</p>
+   </section>
+    <footer class="footer">
+     2025 Trash search | <a href="mailto:lesnoi57eu@gmail.com?subject=Обращение с сайта">Контакты</a> | <a href="https://t.me/trash_search_bot" target="_blank">Telegram</a>
+  </footer>
+</section>
+</body>
+</html>
