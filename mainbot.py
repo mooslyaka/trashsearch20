@@ -10,6 +10,11 @@ con = sqlite3.connect("trash_search_db.sql", check_same_thread=False)
 cur = con.cursor()
 
 
+def start_bot():
+    print("Запуск 1ого бота")
+    bot.infinity_polling(none_stop=True, interval=0)
+
+
 def check_fine(message):
     fine = cur.execute("""SELECT fine FROM Users WHERE tg_id=(?)""", (message.from_user.id,)).fetchone()
     fine = int(str(fine)[1:-2])
@@ -120,6 +125,3 @@ def text(message):
         stats(message)
     if message.text == "Назад🔙":
         main_menu(message)
-
-
-bot.polling(none_stop=True)

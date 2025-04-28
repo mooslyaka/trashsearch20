@@ -6,7 +6,8 @@ import re
 bot = telebot.TeleBot("7016202494:AAEutxmMaJuTvAJS184seuOFgKVF3lxyWUs")
 list_managers = ["mooslyaka"]
 
-
+def start_bot():
+    bot.infinity_polling(none_stop=True, interval=0)
 def check_man(message):
     if message.from_user.first_name in list_managers:
         return True

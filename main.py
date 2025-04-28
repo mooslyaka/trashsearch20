@@ -1,7 +1,14 @@
 from flask import Flask, redirect, render_template, request, jsonify
 import folium
 import requests
+
 app = Flask(__name__)
+
+
+def start_site():
+    print("site")
+    app.run(debug=True)
+
 
 
 @app.route('/')
@@ -16,6 +23,7 @@ def index():
     world_map_html = world_map._repr_html_()
     return render_template("main.html", map_html=world_map_html)
 
+
 def coord():
     all_coords = []
     with open("coordinates.txt") as file:
@@ -24,6 +32,7 @@ def coord():
             coord = [[i[1], i[0]], i[2], i[3]]
             all_coords.append(coord)
     return all_coords
+
 
 if __name__ == '__main__':
     app.run(debug=True)
